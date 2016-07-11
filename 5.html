@@ -6,37 +6,23 @@
 <meta name="copyright" content="智能社 - zhinengshe.com" />
 <title>智能社 - www.zhinengshe.com</title>
 <style>
-body{ background:#000;}
-#c1{ background:#fff;}
+#c1{width:400px; height:500px; background:#fff; margin:0 auto;}
+#c1 img{width:100%;}
+#c1 div{font:50px 'kaiti';position:absolute;left:100px; top:50px;}
 </style>
 <script>
 function d2a(n){
 	return n*Math.PI/180;	
 }
 window.onload = function(){
-	var oC = document.getElementById("c1");
-	var gd = oC.getContext("2d");
-	var d = 0;
-	setInterval(function(){
-		
-		gd.clearRect(0,0,oC.width,oC.height);
-		gd.strokeRect(200,100,200,100);	
-		gd.save();
-		gd.translate(200,200);
-		gd.rotate(d2a(d++));
-		gd.strokeRect(-100,-50,200,100)
-//		gd.fillStyle = "rgba(0,0,145,0.3)";
-//		gd.fillRect(0,0,oC.width,oC.height);
-		gd.restore();
-	},30);
-	
-	
-	
 };
 </script>
 </head>
 
 <body>
-<canvas id="c1" width="800" height="500"></canvas>
+<div id = "c1">
+	<img src="3.jpg"/>
+    <div>亲爱的：<br/>&nbsp&nbsp&nbsp&nbsp天天开心呦!!!<br/><br/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp—爱你的WN</div>
+</div>
 </body>
 </html>
