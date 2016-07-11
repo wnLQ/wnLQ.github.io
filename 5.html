@@ -8,9 +8,17 @@
 <style>
 #c1{width:400px; height:500px; background:#fff; margin:0 auto;}
 #c1 img{width:100%;}
-#c1 div{font:50px 'kaiti';position:absolute;left:400px; top:580px; transition:3s all ease;}
+#c1 div{font:50px 'kaiti';position:absolute;left:300px; top:580px; display:none;}
 </style>
 <script>
+window.onload = function(){
+	var oC1=document.getElementById("c1");
+	var oImg = oC1.children[0];
+	var oDiv = oC1.children[1];
+	setTimeout(function(){
+		oDiv.style.display="block";
+	},1000);
+};
 </script>
 </head>
 
